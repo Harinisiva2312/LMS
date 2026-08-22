@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: skillwave-frontend
+    name: LMS-1
     runtime: static
     rootDir: lms-frontend
     buildCommand: npm install && npm run build
