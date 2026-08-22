@@ -39,7 +39,7 @@ export default function AdminDashboard() {
 
     try{
 
-      const res = await fetch("http://localhost:5000/api/admin/dashboard");
+      const res = await fetch("https://lms-xy4t.onrender.com/api/admin/dashboard");
       const data = await res.json();
 
       setStats(data);
@@ -59,7 +59,7 @@ export default function AdminDashboard() {
 
     try{
 
-      const res = await fetch("http://localhost:5000/api/users");
+      const res = await fetch("https://lms-xy4t.onrender.com/api/users");
       const data = await res.json();
 
       setUsers(data || []);
@@ -79,7 +79,7 @@ export default function AdminDashboard() {
 
     try{
 
-      const res = await fetch("http://localhost:5000/api/courses");
+      const res = await fetch("https://lms-xy4t.onrender.com/api/courses");
       const data = await res.json();
 
       setCourses(data || []);
@@ -99,7 +99,7 @@ export default function AdminDashboard() {
 
     try{
 
-      const res = await fetch("http://localhost:5000/api/payments");
+      const res = await fetch("https://lms-xy4t.onrender.com/api/payments");
       const data = await res.json();
 
       setPayments(data || []);
@@ -119,7 +119,7 @@ export default function AdminDashboard() {
 
     try{
 
-      const res = await fetch("http://localhost:5000/api/certificates/approved");
+      const res = await fetch("https://lms-xy4t.onrender.com/api/certificates/approved");
       const data = await res.json();
 
       setCertificates(data || []);

@@ -33,7 +33,7 @@ export default function CourseLearning() {
       try {
 
         const res = await fetch(
-          `http://localhost:5000/api/certificates/user/${user.email}`
+          `https://lms-xy4t.onrender.com/api/certificates/user/${user.email}`
         );
 
         const data = await res.json();
@@ -122,7 +122,7 @@ export default function CourseLearning() {
 
     try {
 
-      await fetch("http://localhost:5000/api/certificates", {
+      await fetch("https://lms-xy4t.onrender.com/api/certificates", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -155,7 +155,7 @@ export default function CourseLearning() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/chat", {
+      const res = await fetch("https://lms-xy4t.onrender.com/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

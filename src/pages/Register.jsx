@@ -62,7 +62,7 @@ export default function Register() {
 
         // 🔹 Send data to backend
         const response = await fetch(
-          "http://localhost:5000/api/auth/register",
+          "https://lms-xy4t.onrender.com/api/auth/register",
           {
             method: "POST",
             headers: {

@@ -18,7 +18,7 @@ export default function Payment() {
 
   const enrollUser = async () => {
 
-    await fetch("http://localhost:5000/api/enrollments/enroll", {
+    await fetch("https://lms-xy4t.onrender.com/api/enrollments/enroll", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -36,7 +36,7 @@ export default function Payment() {
 
   const savePayment = async () => {
 
-    await fetch("http://localhost:5000/api/payments/create", {
+    await fetch("https://lms-xy4t.onrender.com/api/payments/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

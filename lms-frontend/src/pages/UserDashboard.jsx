@@ -26,7 +26,7 @@ export default function UserDashboard() {
 
     /* FETCH ENROLLMENTS FROM DATABASE */
 
-    fetch(`http://localhost:5000/api/dashboard/${storedUser.email}`)
+    fetch(`https://lms-xy4t.onrender.com/api/dashboard/${storedUser.email}`)
       .then(res => res.json())
       .then(data => {
 

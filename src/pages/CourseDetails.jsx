@@ -17,7 +17,7 @@ export default function CourseDetails() {
 
       try {
 
-        const res = await fetch("http://localhost:5000/api/courses");
+        const res = await fetch("https://lms-xy4t.onrender.com/api/courses");
         const dbCourses = await res.json();
 
         /* FIND COURSE FROM DATABASE */
@@ -97,7 +97,7 @@ export default function CourseDetails() {
       console.log("Calling enrollment API...");
 
       const res = await fetch(
-        "http://localhost:5000/api/enrollments",
+        "https://lms-xy4t.onrender.com/api/enrollments",
         {
           method: "POST",
           headers: {

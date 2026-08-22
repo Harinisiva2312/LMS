@@ -35,13 +35,13 @@ export default function InstructorDashboard() {
       setLoading(true);
 
       const p = await fetch(
-        "http://localhost:5000/api/certificates/pending"
+        "https://lms-xy4t.onrender.com/api/certificates/pending"
       );
 
       const pendingData = await p.json();
 
       const a = await fetch(
-        "http://localhost:5000/api/certificates/approved"
+        "https://lms-xy4t.onrender.com/api/certificates/approved"
       );
 
       const approvedData = await a.json();
@@ -84,7 +84,7 @@ export default function InstructorDashboard() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/users/students"
+        "https://lms-xy4t.onrender.com/api/users/students"
       );
 
       const data = await res.json();
@@ -106,7 +106,7 @@ export default function InstructorDashboard() {
     try {
 
       await fetch(
-        `http://localhost:5000/api/certificates/approve/${id}`,
+        `https://lms-xy4t.onrender.com/api/certificates/approve/${id}`,
         { method: "PUT" }
       );
 
@@ -127,7 +127,7 @@ export default function InstructorDashboard() {
     try {
 
       await fetch(
-        `http://localhost:5000/api/certificates/reject/${id}`,
+        `https://lms-xy4t.onrender.com/api/certificates/reject/${id}`,
         { method: "PUT" }
       );
 

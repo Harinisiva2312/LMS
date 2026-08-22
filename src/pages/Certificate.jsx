@@ -23,7 +23,7 @@ export default function Certificate() {
 
     if (!user || !course) return;
 
-    fetch("http://localhost:5000/api/certificates/create", {
+    fetch("https://lms-xy4t.onrender.com/api/certificates/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

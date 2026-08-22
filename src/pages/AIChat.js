@@ -10,7 +10,7 @@ export default function AIChat() {
     const newChat = [...chat, { user: message }];
     setChat(newChat);
 
-    const res = await fetch("http://localhost:5000/api/ai/chat", {
+    const res = await fetch("https://lms-xy4t.onrender.com/api/ai/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

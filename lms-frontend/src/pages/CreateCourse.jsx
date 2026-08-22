@@ -17,7 +17,7 @@ export default function CreateCourse() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/courses",
+        "https://lms-xy4t.onrender.com/api/courses",
         {
           method: "POST",
           headers: {
